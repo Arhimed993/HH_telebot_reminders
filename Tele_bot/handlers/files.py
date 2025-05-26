@@ -4,7 +4,7 @@ from telebot.types import Message
 FILES_DIR = "data/resumes"
 
 os.makedirs(FILES_DIR, exist_ok=True)
-
+# 
 def register_handlers(bot):
     @bot.message_handler(commands=["files"])
     def list_files(message: Message):
